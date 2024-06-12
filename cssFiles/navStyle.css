@@ -1,0 +1,29 @@
+.nav-container {
+    width: 100%;
+    top: 0;
+    height: var(--nav-height-amount);
+    justify-content: center;
+    position: fixed;
+    background-color: var(--site-acsent-color);
+}
+
+.nav-inner-container {
+    width: var(--inner-container-width);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-state-logo {
+    align-self: center;
+}
+
+.nav-menu {
+    gap: 6rem;
+    align-items: center;
+}
+
+.nav-dark-mode-button {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}

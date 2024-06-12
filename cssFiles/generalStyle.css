@@ -1,0 +1,76 @@
+:root {
+    --nav-height-amount: 100px;
+    --inner-container-width: 60%;
+    --bold-mini-header-font: 1.2rem;
+    --center-spacing-gap: 1.5rem;
+    --site-acsent-color: darkslategray;
+    --background-color-dark: #333;
+    --background-color-dark-opacity: #333333af;
+    --general-top-margin: 2rem;
+
+    --things-to-do-card-width: 400px;
+    --things-to-do-card-height: 280px;
+    --card-aspect-ratio-calc: calc(400 / 280);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+ul {
+    list-style-position: inside;
+    text-indent: 0.5ch;
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #ffc51f;    
+}
+
+.grid {
+    display: grid;
+}
+
+.flex {
+    display: flex;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.row {
+    flex-direction: row;
+}
+
+.main-section-container {
+    min-height: 100%;
+    flex: 1 0 auto;
+}
+
+.line-graphic-ender::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border: 1px solid var(--site-acsent-color);
+}
+
+.white-text {
+    color: white;
+}
+
+.block-spacer {
+    margin-top: 2rem;
+}

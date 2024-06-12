@@ -1,0 +1,66 @@
+.city-main-section-inner-container {
+    margin-top: var(--nav-height-amount);
+    height: calc(100% - var(--nav-height-amount));
+    width: var(--inner-container-width);
+    margin-inline: auto;
+    gap: var(--center-spacing-gap);
+}
+
+.city-info-image-section,
+.city-aside-section {
+    margin-top: var(--general-top-margin);
+    gap: var(--center-spacing-gap);
+}
+
+/* city info section start */
+
+.city-info-image-section {
+    width: 80%;
+}
+
+.city-info-image-inner-container {
+    width: 100%;
+}
+
+.city-image-general {
+    width: 400px;
+    box-shadow: 10px 5px 5px var(--site-acsent-color);
+}
+
+.city-image1 {
+    float: left;
+    margin: 0 2rem 1rem 0;
+}
+
+.city-image2 {
+    float: right;
+    margin: 0 0 1rem 2rem;
+}
+
+.city-info-text {
+    max-width: 100%;
+    margin-top: 2rem;
+}
+
+/* city info section end */
+/* aside start */
+
+.city-aside-section {
+    width: 20%;
+}
+
+.city-aside-inner-container {
+    gap: var(--center-spacing-gap);
+}
+
+.city-aside-list li h3 {
+    list-style-position: inside;
+    text-indent: .5rem;
+    display: inline;
+}
+
+.city-aside-inner-list {
+    text-indent: 1.5rem;
+}
+
+/* aside end */
