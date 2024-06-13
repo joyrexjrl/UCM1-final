@@ -5,6 +5,7 @@
     --center-spacing-gap: 1.5rem;
     --site-acsent-color: darkslategray;
     --background-color-dark: #333;
+    --hover-color: #ffc51f;
     --background-color-dark-opacity: #333333af;
     --general-top-margin: 2rem;
 
@@ -36,7 +37,7 @@ a {
 }
 
 a:hover {
-    color: #ffc51f;    
+    color: var(--hover-color);    
 }
 
 .grid {

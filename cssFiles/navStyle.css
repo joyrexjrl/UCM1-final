@@ -27,3 +27,29 @@
     height: 25px;
     cursor: pointer;
 }
+
+.nav-city-dropdown {
+    position: relative;    
+}
+
+.nav-city-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--background-color-dark);
+    box-shadow: 10px 5px 5px var(--site-acsent-color);
+    min-width: 130px;
+    padding: .5rem;
+    z-index: 1;
+}
+
+.nav-city-dropdown:hover .nav-city-dropdown-content {
+    display: block;
+}
+
+.nav-color-change-mouse-over{
+    cursor: pointer;
+}
+
+.nav-color-change-mouse-over:hover {
+    color: var(--hover-color); 
+}
