@@ -37,7 +37,7 @@
     position: absolute;
     background-color: var(--background-color-dark);
     box-shadow: 10px 5px 5px var(--site-acsent-color);
-    min-width: 130px;
+    min-width: 140px;
     padding: .5rem;
     z-index: 1;
 }
