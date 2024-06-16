@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="cssFiles/stateStyle.css">
     <link rel="stylesheet" href="cssFiles/footerStyle.css">
     <link rel="stylesheet" href="cssFiles/aboutStyle.css">
+    <script src="scripts/aboutFromSubmit.js" defer></script>
 </head>
 <body>
     <header id="home-main-page" class="header-container">
@@ -42,16 +43,32 @@
         <div class="main-section-inner-container">about section
 
         </div>
-        <div class="main-section-inner-container">form section
-            <form action="">
-                <label for="firstName">First Name</label>
-                <input type="text" name="firstName" value="John"><br>
-                <label for="lastName">Last Name</label>
-                <input type="text" name="lastName" value="Doe"><br>
-                <label for="email">Email</label>
-                <input type="email" name="email" value="johndoe@email.com"><br>
-                <label for="message">Message</label>
-                <textarea name="message" id="message"></textarea>
+        <div class="main-section-inner-container">
+            <form class="about-form flex col" action="">
+                <div class="about-form-info flex">
+                    <label for="firstName">First Name:</label>
+                    <input id="formFirstName" type="text" name="firstName" placeholder="John" required><br>
+                </div>                
+                <div class="about-form-info flex">
+                    <label for="lastName">Last Name:</label>
+                    <input id="formLastName" type="text" name="lastName" placeholder="Doe" required><br>
+                </div>                
+                <div class="about-form-info flex">
+                    <label for="email">Email:</label>
+                    <input id="formEmail" type="email" name="email" placeholder="johndoe@email.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
+                </div>                
+                <div class="about-form-info flex">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" placeholder="Message"></textarea>
+                </div>
+                <div class="about-form-info flex">
+                    <div class="about-button-container">
+                        <button class="about-form-button" type="submit" onclick="handleFormSubmission()">Send</button>
+                        <div id="messageSentText" class="about-message-sent-text hide-sent-text">
+                            <p>Email sent.</p>
+                        </div>
+                    </div>                                        
+                </div>
             </form>
         </div>
     </section>

@@ -1,0 +1,52 @@
+.about-form label {
+    min-width: 8rem;
+}
+
+.about-form input,
+.about-form textarea {
+    min-width: 65ch;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.about-form input:invalid {
+    outline: 1px solid red;
+}
+
+.about-form {
+    width: 100%;
+    margin-inline: auto;
+    gap: var(--center-spacing-gap);
+    margin-bottom: 5rem;
+}
+
+.about-form-info {
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.about-button-container {
+    position: relative;
+}
+
+.about-message-sent-text {
+    position: absolute;    
+    width: 15ch;
+    padding-top: .5rem;
+    transition: all .2s ease-in-out;
+}
+
+.hide-sent-text {
+    opacity: 0;
+}
+
+.show-sent-text {
+    opacity: 1;
+}
+
+.about-form-button {
+    width: 75px;
+    padding: 10px;
+}
