@@ -1,3 +1,21 @@
+.main-section-container {
+    margin-top: var(--nav-height-amount);
+    height: calc(100% - var(--nav-height-amount));
+    width: var(--inner-container-width);
+    margin-inline: auto;
+    gap: var(--center-spacing-gap);
+}
+
+.about-content-container {
+    margin-top: var(--general-top-margin);
+    gap: var(--center-spacing-gap);
+}
+
+.about-content {
+    grid-template-columns: repeat(auto-fit, minmax(var(--things-to-do-card-width), 1fr));
+    gap: var(--center-spacing-gap);
+}
+
 .about-form label {
     min-width: 8rem;
 }
@@ -33,7 +51,7 @@
 
 .about-message-sent-text {
     position: absolute;    
-    width: 15ch;
+    max-width: 15ch;
     padding-top: .5rem;
     transition: all .2s ease-in-out;
 }

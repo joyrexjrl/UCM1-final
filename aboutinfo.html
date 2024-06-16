@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="cssFiles/aboutStyle.css">
     <script src="scripts/aboutFromSubmit.js" defer></script>
 </head>
-<body>
-    <header id="home-main-page" class="header-container">
+<body class="flex col">
+    <header id="home-main-page">
         <nav class="nav-container flex">
             <div class="nav-inner-container flex">
                 <a href="index.html"><img class="nav-state-logo" src="images/ca-logo-and-bear.png" alt="state-logo" width="200px" height="70px"></a>
@@ -32,16 +32,28 @@
                         </div>                        
                     </div>
                     <div>
-                        <a class="white-text" href="">News</a>
+                        <a class="white-text" href="https://ktla.com/news/california/" target="_blank">News</a>
                     </div>                   
                 </div>
             </div>
         </nav>
     </header>
 
-    <section>
-        <div class="main-section-inner-container">about section
-
+    <section class="main-section-container flex col">
+        
+        <div class="about-content-container flex col">
+            <h1>About</h1>
+            <div class="about-content grid">
+                <div>
+                    <p>California is a state in the Western United States, lying on the American Pacific Coast. It borders Oregon to the north, Nevada and Arizona to the east, and the Mexican state of Baja California to the south. With 39 million residents across an area of 163,696 square miles, it is the most populous U.S. state, the third-largest by area, and most populated subnational entity in North America.</p><br>
+                    <p>The Greater Los Angeles and San Francisco Bay areas are the nation's second- and fifth-most populous urban regions, with 19 million and 10 million residents respectively. Los Angeles is the state's most populous city and the nation's second-most, after New York. California's capital, Sacramento, is located in the Central Valley.</p>
+                </div>
+                <div>
+                    <p>Prior to European colonization, California was one of the most culturally and linguistically diverse areas in pre-Columbian North America. European exploration in the 16th and 17th centuries led to the colonization by the Spanish Empire. The area became a part of Mexico in 1821, following its successful war for independence, but was ceded to the United States in 1848 after the Mexican American War.</p><br>
+                    <p>The California Gold Rush started in 1848 and led to social and demographic changes, including depopulation of indigenous peoples in the California genocide. The western portion of Alta California was then organized and admitted as the 31st state in 1850, as a free state, following the Compromise of 1850.</p><br>
+                    <p>Send us your thoughts about California or anything else using the form below.</p>
+                </div>
+            </div>
         </div>
         <div class="main-section-inner-container">
             <form class="about-form flex col" action="">
