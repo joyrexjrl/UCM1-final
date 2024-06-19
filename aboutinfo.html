@@ -39,8 +39,7 @@
         </nav>
     </header>
 
-    <section class="main-section-container flex col">
-        
+    <section class="main-section-container about-section-grid">
         <div class="about-content-container flex col">
             <h1>About</h1>
             <div class="about-content grid">
@@ -55,34 +54,41 @@
                 </div>
             </div>
         </div>
-        <div class="main-section-inner-container">
-            <form class="about-form flex col" action="">
-                <div class="about-form-info flex">
-                    <label for="firstName">First Name:</label>
-                    <input id="formFirstName" type="text" name="firstName" placeholder="John" required><br>
-                </div>                
-                <div class="about-form-info flex">
-                    <label for="lastName">Last Name:</label>
-                    <input id="formLastName" type="text" name="lastName" placeholder="Doe" required><br>
-                </div>                
-                <div class="about-form-info flex">
-                    <label for="email">Email:</label>
-                    <input id="formEmail" type="email" name="email" placeholder="johndoe@email.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
-                </div>                
-                <div class="about-form-info flex">
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" placeholder="Message"></textarea>
-                </div>
-                <div class="about-form-info flex">
-                    <div class="about-button-container">
-                        <button class="about-form-button" type="submit" onclick="handleFormSubmission()">Send</button>
-                        <div id="messageSentText" class="about-message-sent-text hide-sent-text">
-                            <p>Email sent.</p>
-                        </div>
-                    </div>                                        
-                </div>
-            </form>
-        </div>
+
+        <aside>
+            <div class="about-section-aside-container">
+                <form class="about-form flex col" action="">
+                    <div class="about-form-info flex">
+                        <label for="firstName">First Name:</label>
+                        <input id="formFirstName" type="text" name="firstName" placeholder="John" required><br>
+                    </div>                
+                    <div class="about-form-info flex">
+                        <label for="lastName">Last Name:</label>
+                        <input id="formLastName" type="text" name="lastName" placeholder="Doe" required><br>
+                    </div>                
+                    <div class="about-form-info flex">
+                        <label for="email">Email:</label>
+                        <input id="formEmail" type="email" name="email" placeholder="johndoe@email.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required><br>
+                    </div>
+                    <div class="about-form-info flex">
+                        <label for="verifyEmail">Verify Email:</label>
+                        <input id="formVerifyEmail" type="verifyEmail" name="verifyEmail" placeholder="Verify Email" required><br>
+                    </div>
+                    <div class="about-form-info flex">
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="about-form-info flex">
+                        <div class="about-button-container">
+                            <button class="about-form-button" type="button" onclick="handleFormSubmission()">Send</button>
+                            <div id="messageSentText" class="about-message-sent-text hide-sent-text">
+                                <p>Email sent.</p>
+                            </div>
+                        </div>                                        
+                    </div>
+                </form>
+            </div>
+        </aside>        
     </section>
 
     <footer class="footer-container flex col">

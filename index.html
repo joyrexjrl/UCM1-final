@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="cssFiles/navStyle.css">
     <link rel="stylesheet" href="cssFiles/stateStyle.css">
     <link rel="stylesheet" href="cssFiles/footerStyle.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body class="flex col">
     <header class="header-container">
@@ -37,7 +41,7 @@
         </nav>
         <div class="under-nav-container">
             <div class="hero flex col">
-                <h1>California</h1>
+                <h1 id="california-header">California</h1>
                 <p>Ca.gov is the official website of <a href="https://www.ca.gov/" target="_blank">California State</a>.</p>
                 <div class="hero-search-bar-container flex">
                     <div>
@@ -52,53 +56,69 @@
     </header>    
 
     <section class="main-section-container">
-        <div class="main-section-inner-container flex col">
+        <div class="main-section-inner-container">
             <div class="main-section-1">
                 <h2 class="line-graphic-ender">Things to do in California</h2>
-                <div class="things-to-do grid">
-                    <div class="things-card stacked">
-                        <img src="images/card images/374fff8a75e97e4d955bb3b02d9a2caf.webp" alt="ca marina image">
-                        <div class="card-content">
-                            <h3 class="white-text">Marinas in California</h3>
-                            <a class="white-text" href="https://marinas.com/browse/marina/US/CA">Click to learn more</a>
+                <div class="index-things-aside-container flex">
+                    <div class="things-to-do grid">
+                        <div class="things-card stacked">
+                            <img src="images/card images/374fff8a75e97e4d955bb3b02d9a2caf.webp" alt="ca marina image">
+                            <div class="card-content">
+                                <h3 class="white-text">Marinas in California</h3>
+                                <a class="white-text" href="https://marinas.com/browse/marina/US/CA">Click to learn more</a>
+                            </div>
+                        </div>
+                        <div class="things-card stacked">
+                            <img src="images/card images/475527-California.webp" alt="hollywood image">
+                            <div class="card-content">
+                                <h3 class="white-text">Historical Hollywood</h3>
+                                <a class="white-text" href="https://www.discoverlosangeles.com/things-to-do/the-beginners-guide-to-hollywood">All things Hollywood</a>
+                            </div>
+                        </div>
+                        <div class="things-card stacked">
+                            <img src="images/card images/ca-times.brightspotcdn.webp" alt="redwood image">
+                            <div class="card-content">
+                                <h3 class="white-text">The Redwoods</h3>
+                                <a class="white-text" href="https://www.visitredwoods.com/explore-the-redwoods/">Explore these giants</a>
+                            </div>
+                        </div>
+                        <div class="things-card stacked">
+                            <img src="images/card images/california-golden-gate-bridge.webp" alt="gold gate bridge image">
+                            <div class="card-content">
+                                <h3 class="white-text">Iconic Golden Gate Bridge</h3>
+                                <a class="white-text" href="https://www.goldengate.org/bridge/visiting-the-bridge/">Plan your trip now</a>
+                            </div>
+                        </div>
+                        <div class="things-card stacked">
+                            <img src="images/card images/california-in-pictures-beautiful-places-to-photograph-yosemite-valley.webp" alt="yosemite image">
+                            <div class="card-content">
+                                <h3 class="white-text">Yosemite National Park</h3>
+                                <a class="white-text" href="https://www.nps.gov/yose/index.htm">Learn more here</a>
+                            </div>
+                        </div>
+                        <div class="things-card stacked">
+                            <img src="images/card images/Lake-Elsinore-640.webp" alt="wild flowers at lake elsinore">
+                            <div class="card-content">
+                                <h3 class="white-text">Wild Flowers</h3>
+                                <a class="white-text" href="https://www.cnps.org/conservation/california-wildflowers">See the best locations</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="things-card stacked">
-                        <img src="images/card images/475527-California.webp" alt="hollywood image">
-                        <div class="card-content">
-                            <h3 class="white-text">Historical Hollywood</h3>
-                            <a class="white-text" href="https://www.discoverlosangeles.com/things-to-do/the-beginners-guide-to-hollywood">All things Hollywood</a>
-                        </div>
-                    </div>
-                    <div class="things-card stacked">
-                        <img src="images/card images/ca-times.brightspotcdn.webp" alt="redwood image">
-                        <div class="card-content">
-                            <h3 class="white-text">The Redwoods</h3>
-                            <a class="white-text" href="https://www.visitredwoods.com/explore-the-redwoods/">Explore these giants</a>
-                        </div>
-                    </div>
-                    <div class="things-card stacked">
-                        <img src="images/card images/california-golden-gate-bridge.webp" alt="gold gate bridge image">
-                        <div class="card-content">
-                            <h3 class="white-text">Iconic Golden Gate Bridge</h3>
-                            <a class="white-text" href="https://www.goldengate.org/bridge/visiting-the-bridge/">Plan your trip now</a>
-                        </div>
-                    </div>
-                    <div class="things-card stacked">
-                        <img src="images/card images/california-in-pictures-beautiful-places-to-photograph-yosemite-valley.webp" alt="yosemite image">
-                        <div class="card-content">
-                            <h3 class="white-text">Yosemite National Park</h3>
-                            <a class="white-text" href="https://www.nps.gov/yose/index.htm">Learn more here</a>
-                        </div>
-                    </div>
-                    <div class="things-card stacked">
-                        <img src="images/card images/Lake-Elsinore-640.webp" alt="wild flowers at lake elsinore">
-                        <div class="card-content">
-                            <h3 class="white-text">Wild Flowers</h3>
-                            <a class="white-text" href="https://www.cnps.org/conservation/california-wildflowers">See the best locations</a>
-                        </div>
-                    </div>
-                </div>
+                    <aside class="index-aside">
+                        <h3 class="line-graphic-ender">Other Tourest Spots</h3>
+                        <ol>
+                            <li><a href="https://travel.usnews.com/Lake_Tahoe_CA/">Lake Tahoe</a></li>
+                            <li><a href="https://www.visitcatalinaisland.com/">Catalina Island</a></li>
+                            <li><a href="https://www.carmelcalifornia.com/">Carmel</a></li>
+                            <li><a href="https://www.visitmammoth.com/">Mammoth</a></li>
+                            <li><a href="https://www.bigbear.com/">Big Bear</a></li>
+                            <li><a href="https://travel.usnews.com/Big_Sur_CA/">Big Sur</a></li>
+                            <li><a href="https://travel.usnews.com/Napa_Valley_CA/">Napa Valley</a></li>
+                            <li><a href="https://travel.usnews.com/Joshua_Tree_National_Park_CA/">Joshua Tree</a></li>
+                            <li><a href="https://travel.usnews.com/Anaheim_Disneyland_CA/">Disneyland</a></li>
+                        </ol>
+                    </aside>
+                </div>                                
             </div>
             <div class="main-section-2 flex col">
                 <h2 class="line-graphic-ender">State Governer</h2>

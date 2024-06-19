@@ -6,6 +6,16 @@
     gap: var(--center-spacing-gap);
 }
 
+.about-section-aside-container {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.about-section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--things-to-do-card-width), .5fr));
+}
+
 .about-content-container {
     margin-top: var(--general-top-margin);
     gap: var(--center-spacing-gap);
@@ -22,7 +32,7 @@
 
 .about-form input,
 .about-form textarea {
-    min-width: 65ch;
+    width: 100%;
     padding: 10px;
     border-radius: 5px;
     box-shadow: none;
@@ -36,7 +46,6 @@
     width: 100%;
     margin-inline: auto;
     gap: var(--center-spacing-gap);
-    margin-bottom: 5rem;
 }
 
 .about-form-info {
